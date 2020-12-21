@@ -17,10 +17,10 @@ after_success:
 deploy:
     provider: elasticbeanstalk
     region: us-east-2
-    app: proj2-sna1234
-    env: Proj2Sna1234-env
+    app: proj2-sna1
+    env: Proj2Sna1-env
     bucket_name: elasticbeanstalk-us-east-2-122637044115
-    bucket_path: proj2-sna1234
+    bucket_path: proj2-sna1
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
