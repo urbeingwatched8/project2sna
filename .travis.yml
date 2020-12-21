@@ -1,0 +1,27 @@
+sudo: required
+
+services:
+    - docker
+
+before_install:
+    - docker build -t softwarebhayya/loginapp .
+
+script:
+    - docker run softwarebhayya/loginapp npm test
+
+after_success:
+    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
+
+    - docker push softwarebhayya/loginapp
+
+deploy:
+    provider: elasticbeanstalk
+    region: ap-south-1
+    app: docker-loginapp
+    env: DockerLoginapp-env
+    bucket_name: elasticbeanstalk-ap-south-1-679022722124
+    bucket_path: docker-loginapp
+    on:
+        branch: master
+    access_key_id: $AWS_ACCESS_KEY
+    secret_acces_key: $AWS_SECRET_KEY
