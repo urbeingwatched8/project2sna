@@ -16,11 +16,11 @@ after_success:
 
 deploy:
     provider: elasticbeanstalk
-    region: ap-south-1
-    app: docker-loginapp
-    env: DockerLoginapp-env
-    bucket_name: elasticbeanstalk-ap-south-1-679022722124
-    bucket_path: docker-loginapp
+    region: us-east-2
+    app: proj2-sna1234
+    env: Proj2Sna1234-env
+    bucket_name: elasticbeanstalk-us-east-2-122637044115
+    bucket_path: proj2-sna1234
     on:
         branch: master
     access_key_id: $AWS_ACCESS_KEY
