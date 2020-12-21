@@ -20,7 +20,7 @@
         },
         {
             "name": "loginapp",
-            "image": " urbeingwatched8/newproj:sub1",
+            "image": "urbeingwatched8/newproj:sub1",
             "environment": [
                 {
                     "name": "MSHOST",
