@@ -4,6 +4,9 @@ FROM node:alpine
 #install dependancies
 WORKDIR /usr/loginapp
 COPY ./package.json ./
+RUN npm run config set proxy null
+RUN npm run config set https-proxy null
+RUN npm config set registry http://registry.npmjs.org/
 RUN npm install
 COPY ./ ./
 
