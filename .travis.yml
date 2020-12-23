@@ -9,10 +9,6 @@ before_install:
 script:
     - docker run urbeingwatched8/newproj:sub1 npm test
 
-after_success:
-    - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_ID" --password-stdin
-
-    - docker push urbeingwatched8/newproj:sub1
 
 deploy:
     provider: elasticbeanstalk
