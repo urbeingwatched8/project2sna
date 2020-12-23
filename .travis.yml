@@ -13,10 +13,10 @@ script:
 deploy:
     provider: elasticbeanstalk
     region: us-east-2
-    app: proj2-snafin
-    env: Proj2Snafin-env
+    app: proj2-sna222
+    env: Proj2Sna222-env
     bucket_name: elasticbeanstalk-us-east-2-122637044115
-    bucket_path: proj2-snafin
+    bucket_path: proj2-sna222
     on:
         branch: main
     access_key_id: $AWS_ACCESS_KEY
