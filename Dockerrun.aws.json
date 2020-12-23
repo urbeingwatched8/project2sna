@@ -57,7 +57,7 @@
                     "name": "WAIT_HOSTS_TIMEOUT",
                     "value": "90"
                 }
-            ],
+            ]
         }
     ]
 }
