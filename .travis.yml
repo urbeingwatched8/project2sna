@@ -19,5 +19,5 @@ deploy:
     bucket_path: proj2-sna444
     on:
         branch: main
-    access_key_id: $AWS_ACCESS_KEY
-    secret_acces_key: $AWS_SECRET_KEY
+    access_key_id: AKIARZDN4ZGJXQZMU7FR
+    secret_acces_key: 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
