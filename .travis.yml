@@ -14,7 +14,7 @@ deploy:
     provider: elasticbeanstalk
     region: us-east-2
     app: proj2-sna333
-    env: Proj2Sna333-env
+    env: Proj2Sna333-env-1
     bucket_name: elasticbeanstalk-us-east-2-122637044115
     bucket_path: proj2-sna333
     on:
