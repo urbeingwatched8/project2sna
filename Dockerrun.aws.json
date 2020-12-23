@@ -20,7 +20,18 @@
         },
         {
             "name": "loginapp",
-            "image": "urbeingwatched8/newproj:sub1",
+	    "links": [
+                "mysql-server"
+            ],
+            "image": "urbeingwatched8/newproj",
+	    "essential": false,
+	    "memory": 128,
+	    "portMappings": [
+		{
+			"containerPort": 8888,
+			"hostPort": 80
+		}
+            ],
             "environment": [
                 {
                     "name": "MSHOST",
@@ -47,18 +58,6 @@
                     "value": "90"
                 }
             ],
-            
-            "portMappings": [
-		{
-			"containerPort": 8888,
-			"hostPort": 80
-		}
-            ],
-            "links": [
-                "mysql-server"
-            ],
-            "memory": 128,
-            "essential": false
         }
     ]
 }
